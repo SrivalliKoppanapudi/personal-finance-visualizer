@@ -34,15 +34,43 @@ Built with Next.js, React, ShadCN (shadcn/ui), Recharts, and MongoDB.
 git clone https://github.com/SrivalliKoppanapudi/personal-finance-visualizer.git
 cd personal-finance-visualizer
 npm install
+```
 
+### 2. Set Up `.env.local`
 
-### 2. Set Up .env.local
-In your project root, create .env.local:
+Create a `.env.local` file in the project root with the following:
 
+```env
 MONGODB_URI="mongodb+srv://<username>:<password>@<cluster>.mongodb.net/finance_app?retryWrites=true&w=majority"
-Replace with your Atlas credentials and database name.
+```
 
-### 3.Run the project
+Replace `<username>`, `<password>`, and `<cluster>` with your MongoDB Atlas credentials.
+
+### 3. Run the Project
+
+```bash
 npm run dev
+```
 
-Visit http://localhost:3000 to begin tracking your transactions.
+Open your browser at [http://localhost:3000](http://localhost:3000) to begin using the app.
+
+---
+
+## 📈 Deployment
+
+To deploy on **Vercel**:
+
+1. Push the project to GitHub.
+2. Connect it to Vercel via the dashboard.
+3. Set `MONGODB_URI` in **Project Settings → Environment Variables**.
+4. Deploy!
+
+---
+
+## 📌 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+> Made with ❤️ by Srivalli Koppanapudi
